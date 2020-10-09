@@ -38,6 +38,7 @@ public class ItemReaderDbDemo {
 	private StepBuilderFactory stepBuilderFactory;
 
 	@Autowired
+	@Qualifier("mssqlDataSource")
 	private DataSource dataSource;
 
 	@Autowired
