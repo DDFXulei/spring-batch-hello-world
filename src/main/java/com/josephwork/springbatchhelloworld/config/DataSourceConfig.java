@@ -19,13 +19,13 @@ public class DataSourceConfig {
     
 	@Bean(name = "h2DataSource")
 	@Primary
-	// @ConfigurationProperties(prefix="spring.datasource.h2")
+	@ConfigurationProperties(prefix="spring.datasource.h2")
 	public DataSource h2DataSource() {
 	    return DataSourceBuilder.create()
-                .url("jdbc:h2:mem:thing:H2;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE")
-                .driverClassName("org.h2.Driver")
-                .username("sa")
-                .password("")	 	    		
+//                .url("jdbc:h2:mem:thing:H2;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE")
+//                .driverClassName("org.h2.Driver")
+//                .username("sa")
+//                .password("")	 	    		
 	    		.build();
 	}
 	
